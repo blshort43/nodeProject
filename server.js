@@ -6,6 +6,9 @@ const app = express();
 
 const port = 8000;
 
+//import routes
+require('./app/routes')(app, {});
+
 app.listen(port, () => {
 	console.log('Connected on port ' + port);
 });
