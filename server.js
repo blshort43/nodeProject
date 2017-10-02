@@ -6,6 +6,9 @@ const app = express();
 
 const port = 8000;
 
+//body parser to process URL encoded forms
+app.use(bodyParser.urlencoded({ extended: true }));
+
 //import routes
 require('./app/routes')(app, {});
 
